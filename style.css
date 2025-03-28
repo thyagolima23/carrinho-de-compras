@@ -5,19 +5,29 @@
 }
 
 header {
-    background-image: url("img/escola.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: scroll;
+    /*background-image: url("/img/capa.jpeg");*/
+    background-color: black;
     height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+header div {
+    width: 100%;
+    background-image: url("/img/capa.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1500px 200px;
+    background-position: left center;
+    background-attachment: scroll;
+    height: 200px;
+    width: 100%;
+}
+figure {
+  
+}
 
-header img {
+figure img {
     border-radius: 50%;
     height: 170px;
     width: 170px;
@@ -25,7 +35,7 @@ header img {
 
 h1 {
     font-size: 10em;
-    color: rgb(0, 38, 255);
+    color: rgb(212, 0, 255);
 }
 
 body {
@@ -102,4 +112,8 @@ button:hover {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
+}
+
+footer {
+    
 }
