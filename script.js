@@ -1,11 +1,11 @@
 // Lista de produtos disponíveis para compra
 const products = [
-    { id: 1, name: 'Camisa Esportiva', price: 29.99 },
-    { id: 2, name: 'Bermuda da Adidas', price: 49.99 },
-    { id: 3, name: 'Meias da Lupo', price: 19.99 },
-    { id: 4, name: 'Tênis Air Jordan', price: 89.99 },
-    { id: 5, name: 'Óculos Escuro', price: 14.99 },
-    { id: 6, name: 'Bicicleta', price: 699.99 }
+    { id: 1, name: 'Camisa Esportiva', img:'./img/camisa-esportiva.webp', price: 29.99 },
+    { id: 2, name: 'Bermuda da Adidas', img:'./img/bermuda.jpg', price: 49.99 },
+    { id: 3, name: 'Meias da Lupo', img:'./img/meias.jpg', price: 19.99 },
+    { id: 4, name: 'Tênis Air Jordan', img:'./img/tenis.webp', price: 89.99 },
+    { id: 5, name: 'Óculos Escuro', img:'./img/oculos.webp', price: 14.99 },
+    { id: 6, name: 'Bicicleta', img:'./img/bicicleta.jpg', price: 699.99 }
 ];
 
 // Função para salvar o carrinho no cookie
@@ -43,6 +43,7 @@ function renderProducts() {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
         productDiv.innerHTML = `
+            <img src=${product.img} alt=${product.name}>
             <h3>${product.name}</h3>
             <p>R$ ${product.price.toFixed(2)}</p>
             <button class="add-to-cart" data-id="${product.id}">Adicionar ao Carrinho</button>
